@@ -1,0 +1,6 @@
+1 x {{ accessory }} {% if sent %}sent to end user's {{ destination }} location {% else %} provided to end user at OSS desk.{% endif %}
+
+{% if sent %}
+Shipping Co.: {{ carrier }}
+Tracking No.: {{ tracking }}
+{% endif %}
